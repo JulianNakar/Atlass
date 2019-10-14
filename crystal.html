@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
+    <script type="text/javascript" src="javaScript/crystalJava.js"></script>
     <div class="col-12">
-    <h1> <strong> Welcome to the Crystal Collection! </strong></h1>
+        <h1> <strong> Welcome to the Crystal Collection! </strong></h1>
     </div>
     <div class="col-12"> To start the game:<br />
         <ul>
@@ -28,29 +29,35 @@
     </div>
 
     <br />
-    <div class="row"> 
-    <button class="col-3" id = "rocks redRock"> <img class="col-3" src = "Images/Ruby.png"></img>  </button>
-    <button class="col-3" id = "rocks blueRock"> <img class="col-3" src = "Images/Sapphire.png"></img> </button>
-    <button class="col-3" id = "rocks greenRock"> <img class="col-3" src = "Images/Emerald.png"></img> </button>
-    <button class="col-3" id = "rocks blackRock">     <img class="col-3" src = "Images/Onix.png"></img> </button> 
+    <div class="row">
+        <button class="col-3" id="redRock"> <img class="col-3" src="Images/Ruby.png"></img> </button>
+        <button class="col-3" id="blueRock"> <img class="col-3" src="Images/Sapphire.png"></img> </button>
+        <button class="col-3" id="greenRock"> <img class="col-3" src="Images/Emerald.png"></img> </button>
+        <button class="col-3" id="blackRock"> <img class="col-3" src="Images/Onix.png"></img> </button>
     </div>
     <br />
-    <div class = "row col-12">
-    <div class="col-6"> Your score: </div>
-    <div class="col-6"> Number to Get: </div>
+    <div class="row">
+        <div class="col-5"> Your score: </div>
+        <div id="playerScore" class="col-5"></div>
     </div>
-<br/>
-<br/>
-    <div class = "row">
-    <h2 class = "col-12"><u>Score Board</u></h2>
-<br/>
-    <h3 class="col-6">Wins: </h3>
-    <h3 class="col-6">Losses: </h3>
+    <div class="row">
+        <div class="col-5"> Number to Get: </div>
+        <div id="compScore" class="col-5"></div>
     </div>
+    <br />
+    <br />
+    <div class="row">
+        <h2 class="col-12"><u>Score Board</u></h2>
+        <br />
+        <div>
+            <h3 class="col-6">Wins: </h3>
+            <div id="winsText"></div>
+        </div>
+        <div>
+            <h3 class="col-6">Losses: </h3>
+            <div id="lossesText"></div>
+        </div>
 
-    <br/>
-    <br/>
-    <h4>Message: </h4>
 
 </body>
 
