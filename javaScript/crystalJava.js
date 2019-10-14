@@ -1,13 +1,15 @@
 
+$(document).ready(function(){
+
 //Numbers dispalyed on screen
 var wins = 0;
 var losses = 0;
 var yourNum = 0;
 var compNum = Math.floor(Math.random() * 100);
-var red = Math.floor(Math.random() * 15)
-var green = Math.floor(Math.random() * 15)
-var blue = Math.floor(Math.random() * 15)
-var black = Math.floor(Math.random() * 15)
+var red = Math.floor(Math.random() * 15+2)
+var green = Math.floor(Math.random() * 15+2)
+var blue = Math.floor(Math.random() * 15+2)
+var black = Math.floor(Math.random() * 15+2)
 
 
 $("#redRock").on("click", function () {
@@ -17,12 +19,20 @@ $("#redRock").on("click", function () {
         wins++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
-    else if (compNum > yourNum) {
+    else if (compNum < yourNum) {
         alert("Sorry. You busted. Try Again!")
         losses++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
 
     $("#winsText").text(wins);
@@ -39,12 +49,20 @@ $("#blueRock").on("click", function () {
         wins++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
-    else if (compNum > yourNum) {
+    else if (compNum < yourNum) {
         alert("Sorry. You busted. Try Again!")
         losses++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
 
     $("#winsText").text(wins);
@@ -61,12 +79,20 @@ $("#greenRock").on("click", function () {
         wins++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
-    else if (compNum > yourNum) {
+    else if (compNum < yourNum) {
         alert("Sorry. You busted. Try Again!")
         losses++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
 
     $("#winsText").text(wins);
@@ -83,12 +109,20 @@ $("#blackRock").on("click", function () {
         wins++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
-    else if (compNum > yourNum) {
+    else if (compNum < yourNum) {
         alert("Sorry. You busted. Try Again!")
         losses++;
         yourNum = 0;
         compNum = Math.floor(Math.random() * 100);
+        red = Math.floor(Math.random() * 15+2)
+        green = Math.floor(Math.random() * 15+2)
+        blue = Math.floor(Math.random() * 15+2)
+        black = Math.floor(Math.random() * 15+2)
     }
 
     $("#winsText").text(wins);
@@ -105,3 +139,4 @@ $("#winsText").text(wins);
 $("#lossesText").text(losses);
 $("#playerScore").text(yourNum);
 $("#compScore").text(compNum);
+});

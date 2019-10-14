@@ -30,13 +30,13 @@
 
     <br />
     <div class="row">
-        <button class="col-3" id="redRock"> <img class="col-3" src="Images/Ruby.png"></img> </button>
-        <button class="col-3" id="blueRock"> <img class="col-3" src="Images/Sapphire.png"></img> </button>
-        <button class="col-3" id="greenRock"> <img class="col-3" src="Images/Emerald.png"></img> </button>
-        <button class="col-3" id="blackRock"> <img class="col-3" src="Images/Onix.png"></img> </button>
+        <button id="redRock" class="col-5"> <img class="col-3" src="Images/Ruby.png" id="redRock"></img> </button>
+        <button id="blueRock" class="col-5"> <img class="col-3" src="Images/Sapphire.png" id="blueRock"></img> </button>
+        <button id="greenRock" class="col-5"> <img class="col-3" src="Images/Emerald.png" id="greenRock"></img> </button>
+        <button id="blackRock" class="col-5"> <img class="col-3" src="Images/Onix.png" id="blackRock"></img> </button>
     </div>
     <br />
-    <div class="row">
+    <div class="row">˜
         <div class="col-5"> Your score: </div>
         <div id="playerScore" class="col-5"></div>
     </div>
@@ -47,15 +47,16 @@
     <br />
     <br />
     <div class="row">
-        <h2 class="col-12"><u>Score Board</u></h2>
+        <h2 class="col-12 float-right"><u>Score Board</u></h2>
         <br />
-        <div>
-            <h3 class="col-6">Wins: </h3>
-            <div id="winsText"></div>
+        <div class = "row" >
+            <div class="col-7 float-right" >Wins: </div>
+            <div class="col-5 float-right" id="winsText"></div>
         </div>
-        <div>
-            <h3 class="col-6">Losses: </h3>
-            <div id="lossesText"></div>
+        <br/> <br/>
+        <div class = "row">
+            <div class="col-7 float-right">Losses: </div>
+            <div class="col-5 float-right" id="lossesText"></div>
         </div>
 
 
